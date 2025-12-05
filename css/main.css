@@ -23,7 +23,7 @@ img {
 .wrapper {
     background: linear-gradient(0deg,rgba(2, 11, 33) 0%, rgba(0, 21, 80) 100%);
     width: 100%;
-     background-color: black;
+    background-color: black;
 }
 
 .container {
@@ -31,6 +31,37 @@ img {
     margin: 0 auto;
 
 }
+
+.games .Click{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.3s;
+    border-radius: 20px;
+
+}
+.games .Click:hover{
+/*    background-color: darkblue;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);*/
+
+      transform: translateY(-10px);
+}
+.Click{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.3s;
+    /*padding-right: 26%;*/
+    box-sizing: border-box;
+    max-width: 100%;
+
+}
+/*.Click:hover{
+    background-color: darkblue;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+      transform: translateX(-10px);}*/
+
 
 header {
     padding: 50px 0;
@@ -78,7 +109,7 @@ header nav ul li.active::after {
 }
 
 
-header nav ul li:not(.active):not(.btn) a:hover {
+header nav ul li:not(.active):not(.btn):not(.active2) a:hover {
     border-bottom: 5px solid #DC7000;
 }
 
@@ -103,7 +134,7 @@ header nav ul li.btn a:hover, .email .block button:hover {
 
 .hero--info {
     width: 530px;
-    padding-top: 70px;
+    padding-top: 50px;
 }
 
 .hero--info h2 {
@@ -140,8 +171,9 @@ header nav ul li.btn a:hover, .email .block button:hover {
 
 .hero img {
     position: absolute;
-    top: -150px;
+    top: -0px;
     right: 0;
+    z-index: 1;
 
 }
 
@@ -160,12 +192,15 @@ header nav ul li.btn a:hover, .email .block button:hover {
 
 .trending .see-all, .projects .see-all{
     color: #ffffff;
-    background: #25211D;
+    /*background: #25211D;*/
+    background: #FF8305;
     border-radius: 5px;
     padding: 12px 23px;
     float: right;
     display: block;
     transition: all 500ms ease ;
+    z-index: 999;
+    position: relative;
 }
 
 .trending .see-all:hover, .projects .see-all:hover {
@@ -284,6 +319,8 @@ header nav ul li.btn a:hover, .email .block button:hover {
     width: 60px;
     text-align: center;
     margin: auto;
+    position: relative;
+    z-index: 9999;
 }
 
 /*работа с email*/
@@ -392,7 +429,8 @@ footer > p {
     display: inline-block;
     vertical-align: top;
     /*margin-right: 570px;*/
-    width: calc(83%);
+    /*width: calc(83%);*/
+    padding: 8px 0 0 10px;
 }
 .date{
     display: flex;
@@ -400,16 +438,7 @@ footer > p {
     margin: -5px 0 -5px 0;
     color: lightgray;
 }
-/*.date fa{
-    speak: never;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    }
-*/
+
 .fa{
     margin: 5px 3px 0 0;
 
@@ -431,6 +460,7 @@ h6{
 }
 .mesto h1{
     font-size: 20px;
+
 }
 
 .top15games {
@@ -440,8 +470,20 @@ h6{
     padding: 1% 1% ;
     width: 94%;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     align-items: center;
+    transition: all 0.1s ease-in;
+    overflow: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
+    width: 100%;
+}
+.top15games:hover{
+    background: rgba(3, 20, 120);
+    transform: translateX(-10px);
+    transition: all 0.3s;
+
+
 }
 .top15games img{
     border-radius: 20px;
@@ -454,5 +496,123 @@ h6{
     margin-top: -3%;
 }
 .boxigr{
+
+}
+
+
+/*Дизайн inserta*/
+.group2{
+    /*display: inline-block;*/
+    vertical-align: top;
+    margin-top: -20px;
+
+
+}
+.boxigr2{
+
+}
+.group2 .top15games2 {
+    background: rgba(2, 25, 80);
+    margin-top:   20px;
+    border-radius: 10px;
+    padding: 1% 1% ;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.top15games2 .mesto h1{
+    font-size: 30px;
+}
+.group2 .mesto{
+    display: inline-block;
+    vertical-align: top;
+    /*margin-right: 570px;*/
+    width: calc(83%);
+
+}
+.group2 .date{
+    display: flex;
+    align-items: center;
+    margin: -5px 0 -5px 0;
+    color: lightgray;
+}
+.blockINS{
+    display: flex;
+    padding-top: 15px;
+
+}
+.blockINS2{
+    padding: 0 0px  0 15px;
+    margin:  0 0 0 0;
+}
+.blockINS2 img{
+    max-width: 1000%;
+}
+.blockText{
+    margin: 0 -75% 0 0;
+
+}
+.blockText h6{
+    font-size: 17px;
+}
+.blockText .blockData{
+    background-color: rgba(2, 30, 100);
+    border-radius: 10px;
+    margin: 5px 0 0 0;
+}
+
+.blockData h6{
+    padding: 5px 0px 2px 15px;
+    font-family: "Times New Roman", Times, serif;
+}
+/*.blockData .ocenca{
+    padding-right: 26px;
+}*/
+.blockData d{
+   
+    font-size: 20px;
+}
+.D{
+    margin: 10px 0 0 0;
+}
+.razrab{
+    margin: 10px 0 0 0px;
+}
+h7{
+    color: lightgray;
+}
+.izdateli{
+    margin: 10px 0 0 0px;
+}
+.mesto .tablo2 h10{
+    font-size: 18px;
+}
+.tablo2Columns{
+    display: flex;
+    gap: 25%;
+}
+.tablo2Columns h2{
+    font-size: 20px;
+}
+.tablo2Columns1{
+   
+}
+.tablo2Columns ul {
+    padding: 0px 0 0 20px ;
+}
+.Po1{
+    padding: 0 0 40px 0px;
+}
+header nav ul li.active2::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 5px;
+    background: #DC7000;
+    border-radius: 10px;
+    position: relative;
+    top: 5px;
 
 }
