@@ -109,7 +109,7 @@ header nav ul li.active::after {
 }
 
 
-header nav ul li:not(.active):not(.btn):not(.active2) a:hover {
+header nav ul li:not(.active):not(.btn):not(.active2):not(.active3) a:hover {
     border-bottom: 5px solid #DC7000;
 }
 
@@ -614,5 +614,70 @@ header nav ul li.active2::after {
     border-radius: 10px;
     position: relative;
     top: 5px;
+
+}
+header nav ul li.active3::after {
+    content: '';
+    display: block;
+    width: 62px;
+    height: 5px;
+    background: #DC7000;
+    border-radius: 10px;
+    position: relative;
+    top: 5px;
+
+}
+/*news часть*/
+h9{
+    font-size: 20px;
+}
+
+.group3 .top15games3 {
+    background: rgba(2, 25, 80);
+    margin-top:   20px;
+    border-radius: 10px;
+    padding: 1% 1% ;
+    margin-left: 10%;
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.top15games3 .mesto h1{
+    font-size: 30px;
+}
+.group3 .mesto1{
+    display: inline-block;
+    vertical-align: top;
+    /*margin-right: 570px;*/
+    
+
+}
+.group3{
+    margin-top: -2%;
+}
+.container1{
+    width: 1070px;
+    margin: 0 auto;
+
+}
+.wrapper1 {
+    background: linear-gradient(0deg,rgba(2, 11, 33) 0%, rgba(0, 21, 80) 100%);
+    width: 100%;
+    background-color: black;
+}
+.ul1{
+    margin-left: -20%;
+}
+.t3 h10{
+    font-size: 20px;
+   
+    }
+.t3{
+     display: inline-block;
+    vertical-align: top;
+
+    padding: 8px 0 0 10px;
 
 }
