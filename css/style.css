@@ -86,6 +86,7 @@ header nav ul {
     justify-content: space-between;
     z-index: 2;
     position: relative;
+    padding-left: 250px;
 }
 
 header nav ul li {
@@ -134,7 +135,7 @@ header nav ul li.btn a:hover, .email .block button:hover {
 
 .hero--info {
     width: 530px;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .hero--info h2 {
@@ -680,4 +681,10 @@ h9{
 
     padding: 8px 0 0 10px;
 
+}
+.img1{
+    padding-top: 70px;
+}
+.active3{
+    
 }
