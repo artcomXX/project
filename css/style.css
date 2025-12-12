@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
 
 * {
     margin: 0;
@@ -26,10 +26,10 @@ img {
     background-color: black;
 }
 
+/* Основной контейнер для 1440px и выше */
 .container {
     width: 1350px;
     margin: 0 auto;
-
 }
 
 .games .Click{
@@ -46,21 +46,6 @@ img {
 
       transform: translateY(-10px);
 }
-.Click{
-    text-decoration: none;
-    color: inherit;
-    display: block;
-    transition: all 0.3s;
-    /*padding-right: 26%;*/
-    box-sizing: border-box;
-    max-width: 100%;
-
-}
-/*.Click:hover{
-    background-color: darkblue;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-
-      transform: translateX(-10px);}*/
 
 
 header {
@@ -324,65 +309,74 @@ header nav ul li.btn a:hover, .email .block button:hover {
     z-index: 9999;
 }
 
-/*работа с email*/
-
-.email {
-    padding-bottom: 120px;
+/* Стили для списка игр */
+.Click {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.3s ease;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
-.email h3 {
-    margin-top: 0px;
-    font-size: 30px;
+.Click:hover {
+    transform: translateY(-5px);
 }
 
-.email .block {
-    background: rgba(2, 11, 60);
-    margin-top: 30px;
-    border-radius: 10px;
-    padding: 40px 3%;
-    width: 94%;
+.top15games {
     display: flex;
-    justify-content: space-between;
+    background: rgba(0, 21, 80, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.top15games img {
+    width: 200px;
+    height: 113px;
+    border-radius: 20px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.mesto {
+    flex: 1;
+}
+
+.mesto h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.date {
+    color: #E87D0E;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
     align-items: center;
+    gap: 8px;
 }
 
-.email .block h4 {
-    font-size: 30px;
-    font-weight: 500;
-}
-
-.email .block p {
-    width: 500px;
-}
-
-.email .block input {
-    background: #ffffff;
-    outline: none;
-    border: 0;
-    border-radius: 5px;
-    width: 380px;
-    font-family: 'Poppins', sans-serif;
+.mesto h6 {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 5px;
     font-weight: 400;
-    padding: 20px 30px;
-    position: relative;
-    right: -105px;
-    z-index: 1;
-    padding-right: 125px;
 }
 
-.email .block input::placeholder {
-    color: #898989;
+.ocenca {
+    display: block;
+    margin-bottom: 5px;
 }
 
-.email .block button {
-    cursor: pointer;
-    border: 0;
-    padding: 13px 10px;
-    position: relative;
-    z-index: 2;
-    color: #ffffff;
+.img-stars {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin: 0 5px;
 }
-
 
 footer {
     background: #000;
@@ -424,267 +418,502 @@ footer > p {
     text-align: center;
 }
 
-/*top15.html*/
+/* МЕДИА-ЗАПРОСЫ */
 
-.mesto{
-    display: inline-block;
-    vertical-align: top;
-    /*margin-right: 570px;*/
-    /*width: calc(83%);*/
-    padding: 8px 0 0 10px;
-}
-.date{
-    display: flex;
-    align-items: center;
-    margin: -5px 0 -5px 0;
-    color: lightgray;
-}
-
-.fa{
-    margin: 5px 3px 0 0;
-
-}
-d{
-    font-size: 13px;
-}
-h6{
-    font-size: 15px;
-    font-weight: normal;
-}
-.ocenca{
-    padding-right: 10px;
-}
-.img-stars{
-    margin: 0px -1px -3px 0px;
-    width: 19px;
-    height: 19px;
-}
-.mesto h1{
-    font-size: 20px;
-
-}
-
-.top15games {
-    background: rgba(2, 25, 80);
-    margin-top: 30px;
-    border-radius: 10px;
-    padding: 1% 1% ;
-    width: 94%;
-    display: flex;
-    /*justify-content: space-between;*/
-    align-items: center;
-    transition: all 0.1s ease-in;
-    overflow: hidden;
-    max-width: 100%;
-    box-sizing: border-box;
-    width: 100%;
-}
-.top15games:hover{
-    background: rgba(3, 20, 120);
-    transform: translateX(-10px);
-    transition: all 0.3s;
-
-
-}
-.top15games img{
-    border-radius: 20px;
-}
-
-.group{
-    /*display: inline-block;*/
-    vertical-align: top;
-    padding: 0px 0px 50px 0px;
-    margin-top: -3%;
-}
-.boxigr{
-
-}
-
-
-/*Дизайн inserta*/
-.group2{
-    /*display: inline-block;*/
-    vertical-align: top;
-    margin-top: -20px;
-
-
-}
-.boxigr2{
-
-}
-.group2 .top15games2 {
-    background: rgba(2, 25, 80);
-    margin-top:   20px;
-    border-radius: 10px;
-    padding: 1% 1% ;
-    width: 98%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.top15games2 .mesto h1{
-    font-size: 30px;
-}
-.group2 .mesto{
-    display: inline-block;
-    vertical-align: top;
-    /*margin-right: 570px;*/
-    width: calc(83%);
-
-}
-.group2 .date{
-    display: flex;
-    align-items: center;
-    margin: -5px 0 -5px 0;
-    color: lightgray;
-}
-.blockINS{
-    display: flex;
-    padding-top: 15px;
-
-}
-.blockINS2{
-    padding: 0 0px  0 15px;
-    margin:  0 0 0 0;
-}
-.blockINS2 img{
-    max-width: 1000%;
-}
-.blockText{
-    margin: 0 -75% 0 0;
-
-}
-.blockText h6{
-    font-size: 17px;
-}
-.blockText .blockData{
-    background-color: rgba(2, 30, 100);
-    border-radius: 10px;
-    margin: 5px 0 0 0;
-}
-
-.blockData h6{
-    padding: 5px 0px 2px 15px;
-    font-family: "Times New Roman", Times, serif;
-}
-/*.blockData .ocenca{
-    padding-right: 26px;
-}*/
-.blockData d{
+/* Для разрешения 1024px */
+@media (max-width: 1024px) {
+    .container {
+        width: 950px;
+    }
+    .banner {
+     padding: 0px 0; 
+    }
    
-    font-size: 20px;
-}
-.D{
-    margin: 10px 0 0 0;
-}
-.razrab{
-    margin: 10px 0 0 0px;
-}
-h7{
-    color: lightgray;
-}
-.izdateli{
-    margin: 10px 0 0 0px;
-}
-.mesto .tablo2 h10{
-    font-size: 18px;
-}
-.tablo2Columns{
-    display: flex;
-    gap: 25%;
-}
-.tablo2Columns h2{
-    font-size: 20px;
-}
-.tablo2Columns1{
-   
-}
-.tablo2Columns ul {
-    padding: 0px 0 0 20px ;
-}
-.Po1{
-    padding: 0 0 40px 0px;
-}
-header nav ul li.active2::after {
-    content: '';
-    display: block;
-    width: 120px;
-    height: 5px;
-    background: #DC7000;
-    border-radius: 10px;
-    position: relative;
-    top: 5px;
-
-}
-header nav ul li.active3::after {
-    content: '';
-    display: block;
-    width: 62px;
-    height: 5px;
-    background: #DC7000;
-    border-radius: 10px;
-    position: relative;
-    top: 5px;
-
-}
-/*news часть*/
-h9{
-    font-size: 20px;
-}
-
-.group3 .top15games3 {
-    background: rgba(2, 25, 80);
-    margin-top:   20px;
-    border-radius: 10px;
-    padding: 1% 1% ;
-    margin-left: 10%;
-    width: 78%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-.top15games3 .mesto h1{
-    font-size: 30px;
-}
-.group3 .mesto1{
-    display: inline-block;
-    vertical-align: top;
-    /*margin-right: 570px;*/
+    .big-text {
+    padding: 30px 0;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    width: 800px;
+    }
+    .banner p{
+        width: 85%;
+    }
+    .trending {
+     padding-top: 0px; 
+    }
+    header nav ul {
+        padding-left: 50px;
+    }
     
+    .hero--info {
+        width: 450px;
+        padding-top: 0px;
+    }
+    
+    .hero--info h1 {
+        font-size: 42px;
+
+    }
+    
+    .top15games {
+        padding: 18px;
+        gap: 20px;
+    }
+    
+    .top15games img {
+        width: 170px;
+        height: 96px;
+    }
+    
+    .mesto h1 {
+        font-size: 22px;
+    }
+    
+    .date {
+        font-size: 13px;
+    }
+    
+    .mesto h6 {
+        font-size: 13px;
+    }
+    
+    footer .blocks p {
+        width: 250px;
+    }
+    .imgSH{
+        display: none;
+    }
+    .imgSS{
+        display: none;
+    }
+    .projects h3{
+        margin: 0 0px 40px 0;
+    }
+    .Neymen{
+    font-size: 14px;
+    }
+    .hero img {
+        position: absolute;
+        top: -0px;
+        right: 0;
+        z-index: 1;
+        width: 50%; height: auto;
+    }
+    .img6{
+        
+        height: 123px;
+    }
+}
+    .projects{
+        padding: 50px 0;
+    }
+    .to15 h3{
+        padding-top: 30px;
+    }
+    .trending .see-all, .projects .see-all {
+    color: #ffffff;
+    background: #25211D;
+    background: #FF8305;
+    border-radius: 5px;
+    padding: 12px 23px;
+    margin-top: -50px;
+    float: right;
+    display: block;
+    position: relative;
+    }
+    .games .Click {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.3s;
+    border-radius: 20px;
+    margin: 0 10px ;
+
+    }
+
+
+/* Для разрешения 768px */
+@media (max-width: 768px) 
+    {
+    .container {
+        width: 700px;
+    }
+   .hero img {
+        position: absolute;
+        top: -0px;
+        right: 0;
+        z-index: 1;
+        width: 48%;
+        height: auto;
+    }
+    .to15 h3 {
+    padding-top: 0px;
+    }
+    header {
+        padding: 40px 0;
+    }
+    
+    header nav {
+        width: 60%;
+    }
+    
+    header nav ul {
+       
+        gap: 15px;
+    }
+    
+    header nav ul li a {
+        font-size: 15px;
+    }
+    
+    .hero {
+        padding-bottom: 40px;
+    }
+    
+    .hero--info {
+        width: 400px;
+        
+    }
+    
+    .hero--info h1 {
+        font-size: 36px;
+    }
+    
+    .hero--info h2 {
+        font-size: 18px;
+    }
+    
+    .hero--info p {
+        margin: 20px 0;
+        font-size: 15px;
+    }
+    
+    .top15games {
+        padding: 16px;
+        gap: 18px;
+    }
+    
+    .top15games img {
+        width: 150px;
+        height: 85px;
+    }
+    
+    .mesto h1 {
+        font-size: 20px;
+    }
+    
+    .date {
+        font-size: 12px;
+    }
+    
+    .mesto h6 {
+        font-size: 12px;
+    }
+    
+    footer .blocks {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    footer .blocks > div {
+        flex: 1;
+        min-width: 45%;
+    }
+    
+    footer .blocks p {
+        width: 100%;
+    }
+    .img6{
+        
+        height: 91px;
+    }
+
 
 }
-.group3{
-    margin-top: -2%;
-}
-.container1{
-    width: 1070px;
-    margin: 0 auto;
 
+/* Для разрешения 425px и меньше - вертикальное расположение с изображением сверху */
+@media (max-width: 425px) {
+    * {
+    margin: 0;
+    padding: 0;
 }
-.wrapper1 {
+.games .img6{
+        width: 320px;
+        height: 180px;
+    }
+    .wrapper {
     background: linear-gradient(0deg,rgba(2, 11, 33) 0%, rgba(0, 21, 80) 100%);
     width: 100%;
     background-color: black;
-}
-.ul1{
-    margin-left: -20%;
-}
-.t3 h10{
-    font-size: 20px;
-   
     }
-.t3{
-     display: inline-block;
-    vertical-align: top;
-
-    padding: 8px 0 0 10px;
-
-}
-.img1{
-    padding-top: 70px;
-}
-.active3{
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
     
+    header {
+        padding: 25px 0;
+        text-align: center;
+    }
+    
+    header .logo {
+        display: block;
+        margin-bottom: 20px;
+        float: none;
+        font-size: 32px;
+    }
+    
+    header nav {
+        float: none;
+        width: 100%;
+    }
+    
+    header nav ul {
+        float: none;
+        padding-left: 0;
+        display: block;
+        text-align: center;
+    }
+    
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    header nav ul li.active::after {
+        margin: 0 auto;
+        width: 120px;
+    }
+    
+    .hero {
+        padding-bottom: 30px;
+        /*text-align: center;*/
+    }
+     .hero h2{
+        display: none;
+     }
+    .hero--info {
+        width: 85%;
+        padding-top: 20px;
+        padding-left: 25px;
+    }
+    
+    .hero--info h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    
+    .hero--info h2 {
+        font-size: 18px;
+    }
+    
+    .hero--info p {
+        font-size: 16px;
+        margin: 15px 0;
+    }
+    
+    /* Вертикальное расположение с изображением СВЕРХУ */
+    .top15games {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    /* Изображение теперь занимает всю ширину и находится сверху */
+    .top15games img {
+        width: 100%;
+        max-width: 320px;
+        height: 180px;
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
+        order: 1; /* Изображение первым */
+    }
+    
+    /* Контейнер с текстом под изображением */
+    .mesto {
+        width: 100%;
+        order: 2; /* Текст вторым */
+        text-align: center;
+    }
+    
+    .mesto h1 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    
+    .date {
+        font-size: 15px;
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+    
+    .mesto h6 {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    .ocenca {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    
+    .img-stars {
+        width: 18px;
+        height: 18px;
+    }
+    
+    footer {
+        padding: 40px 0 20px;
+    }
+    
+    footer .blocks {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    
+    footer .blocks > div {
+        width: 100%;
+    }
+    
+    footer .blocks p {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    footer hr {
+        margin: 25px 0;
+    }
+    
+    footer > p {
+        font-size: 14px;
+    }
+    .trending .games {
+    display: inherit;
+    width: 100%;
+    padding: 50px 0;
+    }   
+    .img1{
+        display: inherit;
+    }
+    .projects .images {
+    display: none;
+}
+.jost{
+    display: none;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+.to15{
+    /*display: inherit;*/
+    margin: 0 0 30px 0 ;
+}
+.to15 h3{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    font-size: 30px;
+    display: center;
+}
+.trending .see-all{
+    
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        float: none;
+        margin: 0 50px 0 50px;
+}
+.banner p {
+    /* font-family: ""; */
+    line-height: 170%;
+    margin-bottom: 20px;
+    width: 100%; 
+    font-size: 20px;
+}
+.projects h3 {
+    font-size: 25px;
+    text-align: center;
+    padding: 20px 0 20px 0
+}
+.to15{
+    
+}
+
+.games img {
+    margin: 0 0 0 8%;
+    
+       
+}
+.images{
+    padding: 0 0 0 0;
+}
+.banner p{
+     width: 85%;
+        padding-top: 20px;
+        padding-left: 25px;
+}
+
+.projects{
+    display: none;
+}
+.logo{
+    padding-top: 20px;
+}
+.trending .games span {
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+    margin: 0 0 20px 0;
+}
+}
+
+/* Для очень маленьких экранов (меньше 375px) */
+@media (max-width: 375px) {
+    .hero--info h1 {
+        font-size: 28px;
+    }
+    .banner p {
+    width: 80%;    
+    padding-left: 35px;
+    }
+    .top15games {
+        padding: 15px;
+    }
+    
+    .top15games img {
+        height: 160px;
+    }
+    
+    .mesto h1 {
+        font-size: 22px;
+    }
+    
+    .mesto h6 {
+        font-size: 15px;
+    }
+    
+    .ocenca {
+        font-size: 14px;
+    }
+    
+    header nav ul li a {
+        font-size: 14px;
+        padding: 8px 12px;
+        display: inline-block;
+    }
+    .games img {
+    margin: 0 0 0 1%;
+
+       
+}
+.Neymen{
+    font-size: 15px;
+}
 }
