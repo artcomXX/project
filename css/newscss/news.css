@@ -685,6 +685,373 @@ h9{
 .img1{
     padding-top: 70px;
 }
-.active3{
+.Neymen{
+    font-size: 14px;
+}
+@media (max-width: 1024px) {
+    .container {
+        width: 950px;
+    }
     
+    .container1 {
+        width: 750px;
+    }
+    
+    header nav ul {
+        padding-left: 20px;
+    }
+    
+    .hero--info {
+        width: 450px;
+    }
+    
+    .hero--info h1 {
+        font-size: 42px;
+    }
+    
+    .hero--info p {
+        font-size: 15px;
+    }
+    
+    .top15games {
+        padding: 15px;
+        gap: 18px;
+    }
+    
+    .top15games img {
+        width: 180px;
+        height: 100px;
+    }
+    
+    
+    .mesto h1 {
+        font-size: 18px;
+    }
+    
+    .mesto h6 {
+        font-size: 14px;
+    }
+    
+    .email .block {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    .email .block p {
+        width: 100%;
+    }
+    
+    .email .block input {
+        width: 300px;
+        position: static;
+        margin: 10px auto;
+    }
+    
+    footer .blocks p {
+        width: 250px;
+    }
+    .blockINS img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Для разрешения 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 700px;
+    }
+    
+    .container1 {
+        width: 650px;
+    }
+        .blockINS img {
+        width: 100%;
+        height: auto;
+    }
+    .ul1{
+    margin-left: 0%;
+}
+
+    header {
+        padding: 30px 0;
+        text-align: center;
+    }
+    
+    header .logo {
+        float: none;
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    header nav {
+        float: none;
+        width: 100%;
+    }
+    
+    header nav ul {
+        padding-left: 0;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .hero {
+        padding-bottom: 40px;
+        text-align: center;
+    }
+    
+    .hero--info {
+        width: 100%;
+        padding-top: 30px;
+    }
+    
+    .hero--info h1 {
+        font-size: 36px;
+    }
+    
+    .hero--info h2 {
+        font-size: 18px;
+    }
+    
+    .big-text {
+        width: 100%;
+        font-size: 28px;
+        padding: 30px 0;
+    }
+    
+    .banner p {
+        width: 100%;
+        font-size: 18px;
+    }
+    
+    .top15games {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 15px;
+    }
+    
+    .top15games img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+        max-height: 170px;
+    }
+    
+    .mesto {
+        width: 100%;
+        
+        text-align: center;
+    }
+    
+    .mesto h1 {
+        font-size: 22px;
+    }
+    
+    .date {
+        justify-content: center;
+    }
+    
+    .ocenca {
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    /* News адаптация */
+    .group3 .mesto1 {
+        padding: 10px;
+    }
+    
+    .t3 h10 {
+        font-size: 18px;
+    }
+    
+    .blockINS {
+        flex-direction: column;
+    }
+    
+    .blockINS2, .blockText {
+        min-width: 100%;
+        padding: 0;
+    }
+    
+    .tablo2Columns {
+        gap: 15%;
+    }
+}
+
+/* Для разрешения 425px и меньше */
+@media (max-width: 425px) {
+    .container {
+        width: 100%;
+        
+    }
+    
+    .container1 {
+        width: 100%;
+        
+    }
+    
+    header {
+        padding: 20px 0;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .hero--info h1 {
+        font-size: 32px;
+    }
+    
+    .hero--info h2 {
+        font-size: 16px;
+    }
+    
+    .hero--info p {
+        font-size: 14px;
+        margin: 20px 0;
+    }
+    
+    .top15games {
+        padding: 15px;
+        margin-top: 20px;
+    }
+    
+    .top15games img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .mesto h1 {
+        font-size: 20px;
+    }
+    
+    h6 {
+        font-size: 14px;
+    }
+    
+    .mesto h6 {
+        font-size: 13px;
+    }
+    
+    .ocenca {
+        font-size: 12px;
+    }
+    
+    .img-stars {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .date {
+        font-size: 13px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .email .block {
+        padding: 25px 15px;
+    }
+    
+    .email .block h4 {
+        font-size: 24px;
+    }
+    
+    .email .block input {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px 20px;
+    }
+    
+    footer .blocks {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    
+    footer .blocks p {
+        width: 100%;
+    }
+    
+    /* News адаптация для мобильных */
+    .group3 .top15games3 {
+        padding: 15px;
+        margin: 15px auto;
+    }
+    
+    .top15games3 .mesto h1 {
+        font-size: 24px;
+    }
+    
+    h9 {
+        font-size: 18px;
+    }
+    
+    .t3 h10 {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    
+    .blockINS img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .tablo2Columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .ul1 {
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+/* Для очень маленьких экранов (меньше 375px) */
+@media (max-width: 375px) {
+    .hero--info h1 {
+        font-size: 28px;
+    }
+    
+    .top15games {
+        padding: 12px;
+    }
+    
+    .mesto h1 {
+        font-size: 18px;
+    }
+    
+    .top15games3 .mesto h1 {
+        font-size: 22px;
+    }
+    
+    h9 {
+        font-size: 16px;
+    }
+    
+    .t3 h10 {
+        font-size: 15px;
+    }
+    
+    header nav ul li a {
+        padding: 5px 8px;
+        font-size: 14px;
+    }
+    
+    .email .block input {
+        padding: 12px 15px;
+    }
+    footer .blocks p {
+        width: 70%;
+        padding-left: 50px;
+    }
+    .Neymen{
+        font-size: 12px;
+    }
+
 }
