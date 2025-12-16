@@ -65,7 +65,7 @@ img {
 
 header {
     padding: 50px 0;
-
+    position: relative;
 }
 
 header .logo ,footer .blocks .logo {
@@ -436,7 +436,7 @@ footer > p {
 .date{
     display: flex;
     align-items: center;
-    margin: -5px 0 -5px 0;
+    /*margin: -5px 0 -5px 0;*/
     color: lightgray;
 }
 
@@ -496,10 +496,6 @@ h6{
     padding: 0px 0px 50px 0px;
     margin-top: -3%;
 }
-.boxigr{
-
-}
-
 
 /*Дизайн inserta*/
 .group2{
@@ -509,9 +505,7 @@ h6{
 
 
 }
-.boxigr2{
 
-}
 .group2 .top15games2 {
     background: rgba(2, 25, 80);
     margin-top:   20px;
@@ -536,7 +530,7 @@ h6{
 .group2 .date{
     display: flex;
     align-items: center;
-    margin: -5px 0 -5px 0;
+   
     color: lightgray;
 }
 .blockINS{
@@ -597,9 +591,7 @@ h7{
 .tablo2Columns h2{
     font-size: 20px;
 }
-.tablo2Columns1{
-   
-}
+
 .tablo2Columns ul {
     padding: 0px 0 0 20px ;
 }
@@ -685,6 +677,358 @@ h9{
 .img1{
     padding-top: 70px;
 }
-.active3{
+
+@media (max-width: 1400px) {
+    .container {
+        width: 95%;
+        max-width: 1200px;
+    }
+
+}
+@media (max-width: 1024px) {
+    .container {
+        width: 95%;
+        max-width: 1200px;
+    }
+    header nav ul {
+        padding-left: 80px;
+    }
+    .blockINS2 img {
+    display: none;
+    }
+    .blockINS {
+     display: inline-block;; 
+    padding-top: 15px;
+    }
+    .group2 .mesto {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    width: calc(100%);
+    }
+    .blockText {
+     margin: 0 0% 0 0; 
+    }
+    .blockINS img {
+    width: 1000px;
+    height: 549px;
+    }
     
 }
+
+@media (max-width: 768px) {
+    .group {
+        margin-top: -5%;
+    }
+
+    
+    .top15games {
+        margin-top: 15px;
+        padding: 15px;
+    }
+    
+    .mesto {
+        width: 100%;
+    }
+      header {
+        padding: 40px 0;
+    }
+    
+    header nav {
+        width: 70%;
+    }
+    
+    header nav ul {
+        padding-left: 80px;
+        gap: 15px;
+    }
+    
+    header nav ul li a {
+        font-size: 15px;
+    }
+    footer .blocks {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    footer .blocks > div {
+        flex: 1;
+        min-width: 45%;
+    }
+    
+    footer .blocks p {
+        width: 100%;
+    }
+    
+    .blockINS2 img {
+    display: none;
+    }
+    .blockINS {
+     display: inline-block;; 
+    padding-top: 15px;
+    }
+    .group2 .mesto {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    width: calc(100%);
+    }
+    .blockText {
+     margin: 0 0% 0 0; 
+    }
+    .tablo2Columns {
+    display: flex;
+    gap: 10%;
+    }
+    .blockINS img {
+    width: 695px;
+    height: 409px;
+    }
+}
+
+@media (max-width: 480px) {
+    .date {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .fa {
+        margin: 0;
+    }
+    
+    .ocenca {
+        text-align: center;
+    }
+    header {
+        padding: 25px 0;
+        text-align: center;
+    }
+    
+    header .logo {
+        display: block;
+        margin-bottom: 20px;
+        float: none;
+        font-size: 32px;
+    }
+    
+    header nav {
+        float: none;
+        width: 100%;
+    }
+    
+    header nav ul {
+        float: none;
+        padding-left: 0;
+        display: block;
+        text-align: center;
+    }
+    
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    header nav ul li.active::after {
+        margin: 0 auto;
+        width: 80px;
+    }
+     .hero {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    
+    .hero--info {
+        width: 100%;
+        padding-top: 20px;
+    }
+    
+    .hero--info h1 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+    
+    .hero--info h2 {
+        font-size: 18px;
+    }
+    
+    .hero--info p {
+        font-size: 16px;
+        margin: 15px 0;
+    }
+    
+    /* Вертикальное расположение с изображением СВЕРХУ */
+    .top15games {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    /* Изображение теперь занимает всю ширину и находится сверху */
+    .top15games img {
+        width: 100%;
+        max-width: 320px;
+        height: 180px;
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
+        order: 1; /* Изображение первым */
+    }
+    
+    /* Контейнер с текстом под изображением */
+    .mesto {
+        width: 100%;
+        order: 2; /* Текст вторым */
+        text-align: center;
+    }
+    
+    .mesto h1 {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+    
+    .date {
+        font-size: 15px;
+        justify-content: center;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    
+    .mesto h6 {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    .ocenci1 {
+        display: flex;
+        padding: 0 0px 0 35%;
+        
+
+    }
+    .ocenci2{
+        display: flex;
+         padding: 0 0px 0 3%;
+
+    }
+    .ocenca{
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+
+
+    }
+    .ball{
+        order: 1;
+    }
+    .top15games .img-stars{
+        width: 19px;
+        height: 19px;
+        order: 0;
+        margin-right: 0px;
+        margin-left: 0px;
+
+
+    }
+    .mesto .h6 {
+        font-size: 15px;
+        margin: 0px 0px 0px 0;
+    }
+
+    
+    footer {
+        padding: 40px 0 20px;
+    }
+    footer .blocks {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+    
+    footer .blocks > div {
+        width: 100%;
+    }
+    
+    footer .blocks p {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    footer hr {
+        margin: 25px 0;
+    }
+    
+    footer > p {
+        font-size: 14px;
+    }
+    header nav ul li {
+    display: inline-block;
+    padding-left: 10px;
+    }   
+    .blockINS2 img{
+        display: none;
+    }
+    .blockINS{
+        display: inline-block;
+    }
+    .blockText{
+     margin: 0 0% 0 0; 
+    }
+    .group2 .date {
+        display: inline-block;
+        align-items: center;
+        color: lightgray;
+    }
+    .fa{
+        margin: -10px 0px 0px 0;
+    }
+    .blockINS img{
+        width: 375px;
+        height: 220px;
+    }
+    .group2 .mesto {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    width: calc(100%);
+    }
+    .tablo2Columns {
+    display: flex;
+    gap: 5%;
+    font-size: 14px;
+    margin: 0 0 10px 0 ;
+    }
+    .Po1 {
+    padding: 0 0 20px 0px;
+    }
+        footer .blocks {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+@media (max-width: 320px) {
+    .mesto h6 {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+    .blockINS img {
+    width: 329px;
+    height: 194px;
+    }
+    .Neymen{
+        font-size: 15px;
+    }
+    .tablo2Columns {
+    display: inline-block; 
+    gap: 5%;
+    font-size: 17px;
+    margin: 0 0 10px 0;
+    }
+    .tablo2Columns h2 {
+    font-size: 20px;
+    margin: 20px 0 0 0;
+}
+}
+
